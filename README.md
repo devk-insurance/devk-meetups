@@ -5,5 +5,5 @@ In this repository you will find all presentations @DEVK Meetups, Cologne
 
 Date | Title | Directory
 -------- | -------- | --------
-2019-07--03 | GWT vs. VueJS | gwt-vs-vuejs
+2019-07-03 | GWT vs. VueJS | gwt-vs-vuejs
 2019-11-20 | Bright Side vs. Dark Side of Microservices | bright-dark-side-microservice
