@@ -8,13 +8,13 @@ GWT stellt neben dem Transpiler für die Umsetzung von Java nach JavaScript eine
 
 In der Session beleuchten wir die Architektur von GWT, die Komponenten und das Eco-System, sowie die aktuellen Entwicklung mit Blick auf J2CL und berichten über Erfahrungswerte mit GWT-Projekten aus der Vergangenheit und Gegenwart.
 
-Presentation: https://github.com/devk-insurance/devk-meetups/blob/master/gwt-vs-vuejs/2019-07-03-devk-meetup-gwt.pdf
+Presentation: [2019-07-03-devk-meetup-gwt.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/gwt-vs-vuejs/2019-07-03-devk-meetup-gwt.pdf)
 
 ## Pimp My Java Web Application mit VueJS
 
 Existierende Java Webanwendungen auf moderne JS Frameworks wie Angular & Co. umzustellen kommt mitunter einem radikalen Neubau des Frontends gleich. Zudem kommen zu den altbekannten Java Build-Werkzeugen ein ganzer Strauß von aus Java Entwickler Perspektive neuen JS-Werkzeugen hinzu. Dies zusammen stellt oftmals eine nicht zu überwindende Hürde da. Um trotzdem Dynamik in die Anwendung zu bekommen, wird oftmals auf JQuery zurückgegriffen. VueJS bietet hierzu eine sehr attraktive und moderne Alternative. Im Meetup wird gezeigt, wie exemplarisch in einem Spring + Thymeleaf Projekt sukzessiv VueJS integriert und somit schrittweise sehr leicht ein modernes dynamisch Web-Frontend erstellt werden kann.
 
-Presentation: https://github.com/devk-insurance/devk-meetups/blob/master/gwt-vs-vuejs/2019-07-03-devk-meetup-vuejs.pdf
+Presentation: [2019-07-03-devk-meetup-vuejs.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/gwt-vs-vuejs/2019-07-03-devk-meetup-vuejs.pdf)
 
 ## Agenda
 
