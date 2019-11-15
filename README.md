@@ -1,7 +1,7 @@
 # {DEV}elopers {K}öln Meetups
 DEVK Meetups Documents and Presentation
 
-In this repository you will find all of presentations @DEVK Meetups
+In this repository you will find all presentations @DEVK Meetups, Cologne
 
 Date | Title | Directory
 -------- | -------- | --------
