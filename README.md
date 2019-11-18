@@ -1,6 +1,15 @@
 # {DEV}elopers {K}öln Meetups
 DEVK Meetups Documents and Presentation
 
+We at [DEVK](https://www.devk.de) are working actively in technologies and methods to bring our apps to the next level. 
+@DEVK Meetups, Cologne we try to find topics, in which we are interesting in and look at two alternatives which we can compare of. Examples of some interesting topics are:
+
+- UI Frameworks: GWT vs. VueJS
+- Microservice vs. Monolith
+- Rancher vs. OpenShift
+- Scrum vs. V-Model
+- Spring Boot vs. Quarkus
+
 In this repository you will find all presentations @DEVK Meetups, Cologne
 
 Date | Title | Directory
