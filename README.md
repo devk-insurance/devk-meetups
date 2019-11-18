@@ -6,9 +6,11 @@ We at [DEVK](https://www.devk.de) are working actively in technologies and metho
 
 - UI Frameworks: GWT vs. VueJS
 - Microservice vs. Monolith
+- Microservice Orchestration vs. Microservice Choreography
 - Rancher vs. OpenShift
 - Scrum vs. V-Model
 - Spring Boot vs. Quarkus
+- Native Development vs. Non-Native Development
 
 In this repository you will find all presentations @DEVK Meetups, Cologne
 
