@@ -12,7 +12,10 @@ We at [DEVK](https://www.devk.de) are working actively in technologies and metho
 - Spring Boot vs. Quarkus
 - Native Development vs. Non-Native Development
 
-In this repository you will find all presentations @DEVK Meetups, Cologne
+In this repository you will find all presentations @DEVK Meetups, Cologne.
+
+Enjoy,
+Jörg and Lofi
 
 Date | Title | Directory
 -------- | -------- | --------
