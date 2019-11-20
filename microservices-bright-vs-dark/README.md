@@ -10,6 +10,8 @@
 
 Der Vortrag zeigt exemplarisch wie eine Migration zu Microservices gelingen kann, worauf dabei zu achten ist und welche Vorteile zu erwarten sind.
 
+Presentation: [2019-11-20-devk-meetup-microsevices-darkside.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/microservices-bright-vs-dark/2019-11-20-devk-meetup-microsevices-darkside.pdf)
+
 ## Dark Side
 
 ### Microservices – Was man auch bedenken sollte
