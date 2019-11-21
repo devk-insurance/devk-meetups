@@ -14,6 +14,7 @@ We at [DEVK](https://www.devk.de) are working actively in technologies and metho
 - Scrum vs. V-Model
 - Spring Boot vs. Quarkus
 - Native Development vs. Non-Native Development
+- Java vs. Kotlin
 
 In this repository you will find all presentations @DEVK Meetups, Cologne.
 
