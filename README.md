@@ -1,5 +1,7 @@
 # {DEV}elopers {K}öln Meetups
 
+<img src="https://raw.githubusercontent.com/devk-insurance/devk-meetups/master/developers-koeln-meetup.jpg" width="250">
+
 ## DEVK Meetups Documents and Presentation
 
 We at [DEVK](https://www.devk.de) are working actively in technologies and methods to bring our apps to the next level. 
