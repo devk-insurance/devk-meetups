@@ -25,7 +25,7 @@ Presentation: [2019-11-20-devk-meetup-microsevices-darkside.pdf](https://github.
 ## Agenda
 
 - Start der Veranstaltung / Imbiss / Socializing
-- Begrüßung/Einleitung - Klaus Dresbach / Lofi Dewanto
+- Begrüßung / Einleitung - Klaus Dresbach / Jörg Odenthal / Lofi Dewanto
 - The Bright Side - Sebastian Gauder
 - Pause
 - The Dark Side - Dr. Jürgen Lampe
