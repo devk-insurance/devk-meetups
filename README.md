@@ -15,6 +15,7 @@ We at [DEVK](https://www.devk.de) are working actively in technologies and metho
 - Spring Boot vs. Quarkus
 - Native Development vs. Non-Native Development
 - Java vs. Kotlin
+- Polyglott vs. Monoglott
 
 In this repository you will find all presentations @DEVK Meetups, Cologne.
 
