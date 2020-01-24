@@ -9,10 +9,10 @@ We at [DEVK](https://www.devk.de) are working actively in technologies and metho
 
 - UI Frameworks: GWT vs. VueJS
 - Microservice vs. Monolith
+- Spring Boot vs. Quarkus vs. Micronaut
 - Microservice Orchestration vs. Microservice Choreography
 - Rancher vs. OpenShift
 - Scrum vs. V-Model
-- Spring Boot vs. Quarkus
 - Native Development vs. Non-Native Development
 - Java vs. Kotlin
 - Polyglott vs. Monoglott
