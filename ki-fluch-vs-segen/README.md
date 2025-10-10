@@ -19,7 +19,7 @@ Von digitalen Assistenten über automatisierte Bildanalyse bis hin zur intellige
 Über Karolina:
 Karolina Weber ist Senior Beraterin mit Fokus auf Data Science bei Hyand. Sie verfügt über umfangreiche Projekterfahrung in der Entwicklung und Integration von KI-Modellen – von Data-Science-Plattformen bis zur praktischen Anwendung in verschiedenen Branchen. Als studierte Mathematikerin verbindet sie fundiertes methodisches Wissen mit konkretem Praxisbezug.
 
-Presentation: [2019-11-20-devk-meetup-microsevices-brightside.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/microservices-bright-vs-dark/2019-11-20-devk-meetup-microsevices-brightside.pdf)
+Presentation: [2019-11-20-devk-meetup-microsevices-brightside.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/ki-fluch-vs-segen/2025-07-03-devk-meetup-ki-revolution.pdf)
 
 
 ## Fluch
@@ -32,4 +32,4 @@ Sandra hat sich kritisch mit dem Hype rund um generative KI und LLMs auseinander
 Über Sandra:
 Sandra Parsick ist Java Champion sowie freiberufliche Softwareentwicklerin und Consultant. Seit 2008 arbeitet sie im Bereich agiler Softwareentwicklung mit Schwerpunkten auf Java Enterprise, Cloud, Software Craftsmanship und der Automatisierung von Entwicklungsprozessen. Sie engagiert sich aktiv in der Tech-Community, unter anderem in Programmkomitees und bei Open-Source-Projekten. Mehr unter sandra-parsick.de.
 
-Presentation: [2019-11-20-devk-meetup-microsevices-brightside.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/microservices-bright-vs-dark/2019-11-20-devk-meetup-microsevices-brightside.pdf)
+Presentation: [2019-11-20-devk-meetup-microsevices-brightside.pdf](https://github.com/devk-insurance/devk-meetups/blob/master/ki-fluch-vs-segen/2025-07-03-devk-meetup-ki-erfahrungsbericht.pdf)
