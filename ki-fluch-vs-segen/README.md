@@ -7,7 +7,7 @@
 * 📍 Ort: DEVK / HDI Cafeteria, Charles-de-Gaulle-Platz 1, 50679 Köln
 * 🕖 Uhrzeit: 18:00 Uhr
 
-[Einladung auf LinkedIn](https://www.linkedin.com/posts/dr-lofi-dewanto_java-springboot-ki-activity-7335610439650734081-gCz4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAKIpTEB5AlY7Z178vDErGeQaOBarUiE8YQ)
+👉 [Einladung auf LinkedIn](https://www.linkedin.com/posts/dr-lofi-dewanto_java-springboot-ki-activity-7335610439650734081-gCz4?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAKIpTEB5AlY7Z178vDErGeQaOBarUiE8YQ)
 
 ▶️ [Kurzes Video auf LinkedIn](https://www.linkedin.com/posts/dr-lofi-dewanto_meetup-devk-kaesnstlicheintelligenz-activity-7347351253808496640--CXd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAKIpTEB5AlY7Z178vDErGeQaOBarUiE8YQ)
 
