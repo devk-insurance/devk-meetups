@@ -1,5 +1,7 @@
 # KI: Klein gegen Groß – Das unglaubliche Duell
 
+📰 **Rückblick (IT News): [Webseite](https://devk-insurance.github.io/devk-meetups/ki-klein-vs-gross/) · [PDF](https://github.com/devk-insurance/devk-meetups/blob/master/ki-klein-vs-gross/2026-09-17-devk-meetup-ki-klein-vs-gross-it-news.pdf)**
+
 *German Language*
 
 * 🎙 DEVK Meetup: KI: Klein gegen Groß – LLM vs. spezialisierte KI, wer gewinnt das Duell?
@@ -28,8 +30,6 @@ Die Meetup-Reihe ist längst eine kleine Tradition: 2019 hieß es „GWT vs. Vue
 <td><img src="fotos/moderation.jpg" width="400"><br><em>Begrüßung und Moderation.</em></td>
 </tr>
 </table>
-
-📰 Rückblick (IT News): [Webseite](https://devk-insurance.github.io/devk-meetups/ki-klein-vs-gross/) · [PDF](https://github.com/devk-insurance/devk-meetups/blob/master/ki-klein-vs-gross/2026-09-17-devk-meetup-ki-klein-vs-gross-it-news.pdf)
 
 ## Groß – „Goliath“
 

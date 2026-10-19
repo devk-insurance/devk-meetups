@@ -90,6 +90,21 @@
         .two, .facts, .gallery { grid-template-columns: 1fr 1fr; }
         header.intro, main, .brandbar, footer { padding-left: 20px; padding-right: 20px; }
         h1 { font-size: 30px; }
+        .two, .gallery { grid-template-columns: 1fr; }
+        .two.photo img { height: auto; }
+        figcaption, .gallery figcaption { font-size: 13px; }
+        .brandbar { flex-direction: column; align-items: flex-start; gap: 2px; padding-top: 14px; padding-bottom: 12px; }
+        .brandbar strong { white-space: nowrap; font-size: 22px; }
+        .brandbar span { font-size: 12px; }
+        .hero img { height: 260px; object-position: center; }
+        .hero .tag { left: 20px; top: 14px; }
+        h2 { font-size: 24px; }
+        .fact { padding: 12px 8px; }
+        .fact b { font-size: 21px; }
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .table-scroll table { font-size: 13px; min-width: 520px; }
+        blockquote { font-size: 16px; }
+        footer { flex-direction: column; }
     }
 </style>
 </head>
@@ -175,13 +190,13 @@
 
 <p>Ihr Praxisbeispiel trug den Titel <strong>„Ist dieser Hund gesund?“</strong>. Für das Produkt <strong>TomoSense</strong> hat DOS eine MRT-Diagnose-Pipeline für Hunde gebaut. Statt eines Universalmodells gibt es vier Aufgaben mit vier Architekturen:</p>
 
-<table>
+<div class="table-scroll"><table>
     <tr><th>Stufe</th><th>Frage</th><th>Modell</th></tr>
     <tr><td>1 · Segmentierung</td><td>Wo ist das Gehirn?</td><td>3D nnU-Net</td></tr>
     <tr><td>2 · Klassifikation</td><td>Was ist auf dieser Schicht? (5 Symptome)</td><td>CNN „SepNetDense“, nur 76.626 Parameter</td></tr>
     <tr><td>3 · Signalanalyse</td><td>Wie wahrscheinlich hat der Patient ein Symptom?</td><td>Wavelet-Transformation + XGBoost-Regressor</td></tr>
     <tr><td>4 · Entscheidung</td><td>Tumor, Entzündung oder unauffällig?</td><td>XGBoost-Klassifikator</td></tr>
-</table>
+</table></div>
 
 <figure>
     <img src="folien/gloria-17.jpg" alt="Folie: Unsere MRT-Pipeline">
