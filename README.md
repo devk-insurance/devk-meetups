@@ -2,9 +2,7 @@
 
 🌐 **Webseite: [devk-insurance.github.io/devk-meetups](https://devk-insurance.github.io/devk-meetups/)**
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/devk-insurance/devk-meetups/master/developers-koeln-meetup.jpg" width="250">
-</p>
+<img src="https://raw.githubusercontent.com/devk-insurance/devk-meetups/master/developers-koeln-meetup.jpg" width="250">
 
 ## DEVK Meetups Documents and Presentation
 
