@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT News · DEVK Meetup 2026 – KI: Klein gegen Groß</title>
+<style>
+    @font-face { font-family: "Ahkio"; src: url("fonts/ahkio-regular.woff2") format("woff2"); }
+    @font-face { font-family: "Univers Next"; src: url("fonts/univers-next-pro-regular.woff") format("woff"); font-weight: 400; }
+    @font-face { font-family: "Univers Next"; src: url("fonts/univers-next-pro-bold.woff") format("woff"); font-weight: 700; }
+
+    :root {
+        --gruen: #008746;
+        --dunkelgruen: #005437;
+        --hellgruen: #8bc379;
+        --hellgruen-20: #e8f2e4;
+        --text: #1d1d1b;
+        --text-soft: #4a4a48;
+        --linie: #e3e9e4;
+        --font-text: "Univers Next", "Helvetica Neue", Arial, sans-serif;
+        --font-head: "Ahkio", "Univers Next", "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-text); color: var(--text); background: #f4f6f4; line-height: 1.6; font-size: 16px; }
+    .page { max-width: 900px; margin: 0 auto; background: #fff; }
+
+    .brandbar { display: flex; justify-content: space-between; align-items: center; padding: 18px 44px; border-bottom: 3px solid var(--gruen); font-size: 13px; color: var(--text-soft); }
+    .brandbar strong { font-family: var(--font-head); font-weight: 400; color: var(--gruen); font-size: 24px; letter-spacing: .5px; }
+
+    .hero { position: relative; }
+    .hero img { width: 100%; height: 420px; object-fit: cover; object-position: center 45%; display: block; }
+    .hero .tag { position: absolute; top: 20px; left: 44px; background: var(--gruen); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 12px; border-radius: 4px; }
+
+    header.intro { padding: 34px 44px 10px; }
+    h1 { font-family: var(--font-head); font-weight: 400; color: var(--dunkelgruen); font-size: 40px; line-height: 1.12; margin-bottom: 10px; }
+    .subline { font-size: 19px; color: var(--text-soft); margin-bottom: 14px; }
+    .meta { font-size: 13px; color: var(--text-soft); display: flex; flex-wrap: wrap; gap: 6px 18px; border-top: 1px solid var(--linie); padding-top: 12px; }
+    .meta span::before { content: "■ "; color: var(--hellgruen); }
+
+    main { padding: 10px 44px 30px; }
+    p { margin: 0 0 14px; }
+    .lead { font-size: 18px; font-weight: 700; color: var(--dunkelgruen); margin: 18px 0; }
+    h2 { font-family: var(--font-head); font-weight: 400; color: var(--gruen); font-size: 27px; margin: 34px 0 12px; line-height: 1.2; }
+    h2 small { display: block; font-family: var(--font-text); font-size: 13px; color: var(--text-soft); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 2px; }
+
+    figure { margin: 20px 0; break-inside: avoid; }
+    figure img { width: 100%; display: block; border-radius: 8px; border: 1px solid var(--linie); }
+    figcaption { font-size: 13px; color: var(--text-soft); margin-top: 6px; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+    .two figure { margin: 0; }
+    .two.photo img { height: 300px; object-fit: cover; }
+
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 22px 0; break-inside: avoid; }
+    .fact { background: var(--hellgruen-20); border-radius: 10px; padding: 14px 12px; text-align: center; }
+    .fact b { display: block; font-family: var(--font-head); font-weight: 400; font-size: 26px; color: var(--gruen); line-height: 1.1; }
+    .fact span { font-size: 12.5px; color: var(--text-soft); }
+
+    blockquote { border-left: 5px solid var(--gruen); background: var(--hellgruen-20); padding: 14px 20px; margin: 22px 0; font-size: 18px; color: var(--dunkelgruen); border-radius: 0 8px 8px 0; break-inside: avoid; }
+    blockquote cite { display: block; font-size: 13px; font-style: normal; color: var(--text-soft); margin-top: 6px; }
+
+    ul.tips { margin: 6px 0 16px 0; list-style: none; }
+    ul.tips li { padding-left: 22px; position: relative; margin-bottom: 6px; }
+    ul.tips li::before { content: "›"; position: absolute; left: 4px; color: var(--gruen); font-weight: 700; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 18px 0; break-inside: avoid; }
+    th { background: var(--dunkelgruen); color: #fff; text-align: left; padding: 9px 12px; }
+    td { padding: 8px 12px; border-bottom: 1px solid var(--linie); vertical-align: top; }
+    tr:nth-child(even) td { background: #f7faf6; }
+
+    .box { border: 2px solid var(--hellgruen); border-radius: 12px; padding: 18px 22px; margin: 26px 0; break-inside: avoid; }
+    .box h3 { color: var(--dunkelgruen); font-size: 17px; margin-bottom: 8px; }
+
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+    .gallery figure { margin: 0; }
+    .gallery figcaption { font-size: 11.5px; }
+
+    footer { background: var(--dunkelgruen); color: #fff; padding: 22px 44px; font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    footer b { font-family: var(--font-head); font-weight: 400; font-size: 18px; }
+
+    @page { size: A4; margin: 12mm 0; }
+    @media print {
+        body { background: #fff; font-size: 14.5px; }
+        .page { max-width: none; }
+        .hero img { height: 330px; }
+        h2 { break-after: avoid; }
+        .pb { break-before: page; }
+        * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    @media (max-width: 680px) {
+        .two, .facts, .gallery { grid-template-columns: 1fr 1fr; }
+        header.intro, main, .brandbar, footer { padding-left: 20px; padding-right: 20px; }
+        h1 { font-size: 30px; }
+    }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="brandbar"><strong>IT News</strong><span>Community · {DEV}elopers {K}öln · Ausgabe Oktober 2026</span></div>
+
+<div class="hero">
+    <img src="fotos/gruppenfoto.jpg" alt="Organisationsteam und Speakerinnen vor dem Keyvisual „KI – Klein gegen Groß“">
+    <div class="tag">Rückblick · DEVK Meetup</div>
+</div>
+
+<header class="intro">
+    <h1>David gegen Goliath: Wer gewinnt das KI-Duell?</h1>
+    <p class="subline">Große Sprachmodelle gegen spezialisierte KI – beim DEVK Meetup am 17. September 2026 traten zwei Ansätze gegeneinander an. Das Ergebnis: ein klares Unentschieden mit Mehrwert.</p>
+    <div class="meta">
+        <span>17.09.2026, Köln</span>
+        <span>DEVK / HDI Cafeteria</span>
+        <span>57 Teilnehmende</span>
+        <span>Eröffnung: Manuela Moog, Vorständin IT DEVK</span>
+        <span>Speakerinnen: Jennifer Lucifero (codecentric AG), Gloria Barth (DOS Software-Systeme GmbH)</span>
+        <span>Organisation: Agnes Reipen &amp; Lofi Dewanto</span>
+    </div>
+</header>
+
+<main>
+
+<p class="lead">57 Gäste, zwei Vorträge, eine Frage: Braucht jedes Problem ein Modell mit Milliarden Parametern – oder reicht manchmal ein kleiner Spezialist? Beim aktuellen Meetup der Reihe {DEV}elopers {K}öln ging es um genau dieses „unglaubliche Duell“.</p>
+
+<p>Eröffnet wurde der Abend von <strong>Manuela Moog, Vorständin IT der DEVK</strong>. Die Meetup-Reihe ist längst eine kleine Tradition: 2019 hieß es „GWT vs. VueJS“, kurz danach „Bright Side vs. Dark Side of Microservices“, 2025 dann „KI – Fluch oder Segen?“. In diesem Jahr ging es nicht mehr um die Frage, <em>ob</em> KI hilft, sondern <em>welche</em> KI zu welchem Problem passt. Oder wie es in der Begrüßung hieß: <strong>„Entscheidend ist nicht, welches Modell am beeindruckendsten klingt, sondern welches unser Problem am besten löst.“</strong></p>
+
+<figure>
+    <img src="fotos/publikum.jpg" alt="Publikum in der DEVK Cafeteria">
+    <figcaption>57 Gäste in der Cafeteria am Charles-de-Gaulle-Platz.</figcaption>
+</figure>
+
+<h2><small>Vortrag 1 · „Goliath“</small>GenAI &amp; große LLMs – Jennifer Lucifero, codecentric</h2>
+
+<p>Jennifer Lucifero holte das Publikum zuerst ab: Wer hat schon von LLMs gehört? Wer nutzt sie beruflich? Wer hat schon einmal ein Modell lokal laufen lassen? Danach ging es unter die Haube – von Tokenization über Embeddings und Self-Attention bis zum Softmax, der bewusst nicht immer das wahrscheinlichste Token auswählt, damit Antworten „menschlicher“ wirken. Ihre Kernbotschaft:</p>
+
+<blockquote>„Ein LLM weiß nichts – es schätzt nur verdammt gut.“<cite>Jennifer Lucifero, „Die Illusion der Intelligenz“</cite></blockquote>
+
+<div class="two">
+    <figure><img src="folien/jennifer-09.jpg" alt="Folie: Die Illusion der Intelligenz"><figcaption>Die Illusion der Intelligenz</figcaption></figure>
+    <figure><img src="folien/jennifer-25.jpg" alt="Folie: Führende Modelle im Vergleich"><figcaption>„Groß“ heißt: hunderte Milliarden bis Billionen Parameter.</figcaption></figure>
+</div>
+
+<p>Spannend für alle, die täglich mit Coding-Agenten arbeiten, war der Teil zum <strong>Context Engineering</strong>. Moderne Modelle bieten zwar Kontextfenster von rund einer Million Tokens, aber mehr ist nicht automatisch besser: Mit wachsendem Kontext sinkt die Trefferqualität deutlich. Jennifer unterschied deshalb zwischen einer „Smart Zone“ und einer „Dumb Zone“ im Kontextfenster.</p>
+
+<div class="two">
+    <figure><img src="folien/jennifer-31.jpg" alt="Folie: Performance sinkt mit Kontextgröße"><figcaption>Performance sinkt mit der Kontextgröße.</figcaption></figure>
+    <figure><img src="folien/jennifer-32.jpg" alt="Folie: Smart Zone und Dumb Zone"><figcaption>Ziel: in der Smart Zone arbeiten.</figcaption></figure>
+</div>
+
+<div class="box">
+    <h3>Praxistipps für das Context Management</h3>
+    <ul class="tips">
+        <li>Dauerhaft gültige Regeln in Dateien auslagern (z. B. <code>AGENTS.md</code>)</li>
+        <li>Bei Themenwechsel eine neue Session starten</li>
+        <li>Antwortlänge begrenzen: „antworte kurz und prägnant“</li>
+        <li>Den bisherigen Stand komprimieren</li>
+        <li>Nur wenn es nicht anders geht: Modelle mit großem Kontextfenster wählen</li>
+    </ul>
+    <p style="margin:0">Bei der Modellwahl helfen drei Kriterien: <strong>Preis pro Token</strong>, <strong>Größe des Kontextfensters</strong> und <strong>Inferenzgeschwindigkeit</strong>. Es lohnt sich außerdem, gezielt quelloffene, lokal laufende oder europäische Modelle auszuprobieren.</p>
+</div>
+
+<p>Zwei Praxisbeispiele zeigten, wie das konkret aussieht. Der <strong>Renovate Fixer</strong> reagiert automatisch auf fehlgeschlagene Dependency-Updates in GitLab: Ein Main-Agent liest Pipeline-Logs, repariert Lock-Files und pusht einen Fix-Commit. Ein Research-Agent sammelt dafür Informationen zu Major-Updates. Gebaut ist das Ganze mit Pydantic AI und MCP-Toolsets. Das zweite Beispiel, <strong>SmartClaim AI</strong>, ist eine Demo für KI-gestützte Schadenbearbeitung bei Versicherungen. Jeder Schritt läuft über Mistral AI, und die App selbst wurde in rund neun Stunden hauptsächlich von Claude Sonnet gebaut.</p>
+
+<div class="two">
+    <figure><img src="folien/jennifer-41.jpg" alt="Folie: Renovate Fixer Architektur"><figcaption>Renovate Fixer: Main-Agent plus Research-Agent.</figcaption></figure>
+    <figure><img src="folien/jennifer-39.jpg" alt="Folie: DevOps-Schleife"><figcaption>KI-Einsatz entlang der gesamten DevOps-Schleife.</figcaption></figure>
+</div>
+
+<h2 class="pb"><small>Vortrag 2 · „David“</small>Spezialisierte KI-Modelle in der Praxis – Gloria Barth, DOS</h2>
+
+<div class="two photo">
+    <figure><img src="fotos/gloria-vortrag.jpg" alt="Gloria Barth beim Vortrag"><figcaption>Gloria Barth: „Ist dieser Hund gesund?“</figcaption></figure>
+    <figure><img src="fotos/jennifer-vortrag.jpg" alt="Jennifer Lucifero beim Vortrag" style="object-position:center 40%"><figcaption>Jennifer Lucifero mit der DevOps-Schleife.</figcaption></figure>
+</div>
+
+<p>Gloria Barth erinnerte daran, dass Sprachmodelle nur die Spitze des Eisbergs sind. Unter der Oberfläche laufen seit Jahren medizinische Bildanalyse, Betrugserkennung, Predictive Maintenance und Empfehlungssysteme. Dazu passt das Tesler-Theorem: <em>„Intelligenz ist das, was Maschinen noch nicht getan haben.“</em></p>
+
+<p>Ihr Praxisbeispiel trug den Titel <strong>„Ist dieser Hund gesund?“</strong>. Für das Produkt <strong>TomoSense</strong> hat DOS eine MRT-Diagnose-Pipeline für Hunde gebaut. Statt eines Universalmodells gibt es vier Aufgaben mit vier Architekturen:</p>
+
+<table>
+    <tr><th>Stufe</th><th>Frage</th><th>Modell</th></tr>
+    <tr><td>1 · Segmentierung</td><td>Wo ist das Gehirn?</td><td>3D nnU-Net</td></tr>
+    <tr><td>2 · Klassifikation</td><td>Was ist auf dieser Schicht? (5 Symptome)</td><td>CNN „SepNetDense“, nur 76.626 Parameter</td></tr>
+    <tr><td>3 · Signalanalyse</td><td>Wie wahrscheinlich hat der Patient ein Symptom?</td><td>Wavelet-Transformation + XGBoost-Regressor</td></tr>
+    <tr><td>4 · Entscheidung</td><td>Tumor, Entzündung oder unauffällig?</td><td>XGBoost-Klassifikator</td></tr>
+</table>
+
+<figure>
+    <img src="folien/gloria-17.jpg" alt="Folie: Unsere MRT-Pipeline">
+    <figcaption>Vom MRT-Bild zur Diagnose in vier spezialisierten Stufen.</figcaption>
+</figure>
+
+<div class="facts">
+    <div class="fact"><b>31,3 Mio.</b><span>Parameter gesamt (statt ~1,8 Billionen)</span></div>
+    <div class="fact"><b>1 GPU</b><span>2 Wochen reines Training</span></div>
+    <div class="fact"><b>94,4 %</b><span>Genauigkeit: unauffällig vs. abnormal</span></div>
+    <div class="fact"><b>86,0 %</b><span>Genauigkeit: drei Diagnoseklassen</span></div>
+</div>
+
+<p>Besonders anschaulich war das Beispiel zum <strong>Scanner Bias</strong>. Auf bekannten MRT-Scannern erreichte die Segmentierung eine IoU von 0,88. Auf fremden Geräten brach sie auf 0,31 ein. Das Team ging nach dem Muster Messen – Diagnostizieren – Reparieren – Nachmessen vor, und danach lagen beide Werte bei rund 0,90. Genau diese Messbarkeit ist laut Gloria die große Stärke des Spezialwegs. Hinzu kommt die Reproduzierbarkeit: Gleiches Bild rein, gleicher Score raus, ohne Sampling und ohne Temperatur.</p>
+
+<div class="two">
+    <figure><img src="folien/gloria-26.jpg" alt="Folie: Scanner Bias"><figcaption>Messbarkeit in Aktion: Scanner Bias erkannt und behoben.</figcaption></figure>
+    <figure><img src="folien/gloria-34.jpg" alt="Folie: Unsere Pipeline in Zahlen"><figcaption>Klein gegen Groß in Zahlen.</figcaption></figure>
+</div>
+
+<p>Der Spezialweg hat aber auch seinen Preis: Annotierte Daten sind der Engpass, Domänenwissen ist Pflicht, und jedes Modell muss einzeln trainiert, validiert, versioniert und überwacht werden. Ein kompletter Patient braucht im Schnitt fünf Minuten. Das neuronale Netz selbst rechnet davon nur Millisekunden.</p>
+
+<h2><small>Fazit</small>Kein Entweder-oder, sondern die Passung</h2>
+
+<p>Am Ende gab es keinen K.-o.-Sieg. Beide Vorträge kamen zu derselben Schlussfolgerung:</p>
+
+<blockquote>„Wo es richtig und falsch gibt und der Output eine Maske, ein Score, eine Klasse ist, baut man das Werkzeug. Wo es um Sprache und Kontext geht, nimmt man das große Modell. Warum nicht beides?“<cite>Gloria Barth, DOS Software-Systeme GmbH</cite></blockquote>
+
+<p>Der Spezialist gehört in den Kern, das Sprachmodell an den Rand: Es kann Befundtexte einlesen, Ergebnisse formulieren und Randfälle für das weitere Training priorisieren. Jennifer gab mit dem Ausblick die Richtung vor, nämlich den Wandel vom Chatbot zum Agenten. Beim anschließenden Buffet wurde noch lange weiterdiskutiert, ob Goliath oder David die Nase vorn hat.</p>
+
+<div class="two photo">
+    <figure><img src="fotos/dank-blumen.jpg" alt="Dank an die Speakerinnen mit Blumen"><figcaption>Blumen für die Speakerinnen zum Abschluss.</figcaption></figure>
+    <figure><img src="fotos/buffet.jpg" alt="Buffet beim Networking"><figcaption>Networking mit Fingerfood: der inoffizielle dritte Programmpunkt.</figcaption></figure>
+</div>
+
+<div class="box">
+    <h3>Ein Tipp zum Weitermachen</h3>
+    <p style="margin:0">Der <strong>female dev club</strong> greift das Thema auf: <em>„Wie verändert KI die Arbeitsweise im Entwicklungsteam?“</em>, am <strong>04.11.2026, 18–21 Uhr</strong> im OPEN, Neusser Straße 27–29, Köln (meetup.com/female-dev-club). Ein herzliches Dankeschön an Manuela Moog für die Eröffnung, an Jennifer Lucifero, Gloria Barth und Jörg Janisch (DOS), an codecentric und DOS sowie an alle, die den Abend möglich gemacht haben.</p>
+</div>
+
+<h2 class="pb"><small>Zum Nachschauen</small>Ausgewählte Folien</h2>
+<div class="gallery">
+    <figure><img src="folien/jennifer-11.jpg" alt=""><figcaption>Begrifflichkeiten: AI ⊃ ML ⊃ DL ⊃ GenAI ⊃ LLM</figcaption></figure>
+    <figure><img src="folien/jennifer-17.jpg" alt=""><figcaption>Self-Attention am Beispiel „field“</figcaption></figure>
+    <figure><img src="folien/jennifer-33.jpg" alt=""><figcaption>Strategien für Context Management</figcaption></figure>
+    <figure><img src="folien/jennifer-44.jpg" alt=""><figcaption>SmartClaim AI: in 9 h mit Claude gebaut</figcaption></figure>
+    <figure><img src="folien/gloria-08.jpg" alt=""><figcaption>Seit wann gibt es eigentlich KI?</figcaption></figure>
+    <figure><img src="folien/gloria-11.jpg" alt=""><figcaption>Der KI-Eisberg</figcaption></figure>
+    <figure><img src="folien/gloria-14.jpg" alt=""><figcaption>Froschauge und neuronales Netz</figcaption></figure>
+    <figure><img src="folien/gloria-18.jpg" alt=""><figcaption>Warum vier Modelle statt eins?</figcaption></figure>
+    <figure><img src="folien/gloria-30.jpg" alt=""><figcaption>Stufe 4: die Entscheidung</figcaption></figure>
+    <figure><img src="folien/gloria-36.jpg" alt=""><figcaption>Die Bilanz des Spezialwegs</figcaption></figure>
+    <figure><img src="folien/gloria-39.jpg" alt=""><figcaption>Fazit: Passung statt Entweder-oder</figcaption></figure>
+    <figure><img src="fotos/meetups-historie.jpg" alt=""><figcaption>{DEV}elopers {K}öln: Meetups seit 2019</figcaption></figure>
+</div>
+
+</main>
+
+<footer>
+    <div><b>{DEV}elopers {K}öln</b><br>DEVK Meetup · 17. September 2026 · Köln</div>
+    <div style="text-align:right">Fotos: Event-Team · Folien: codecentric AG, DOS Software-Systeme GmbH<br>Gesagt. Getan. Geholfen.</div>
+</footer>
+
+</div>
+</body>
+</html>
