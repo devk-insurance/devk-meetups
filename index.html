@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{DEV}elopers {K}öln · DEVK Meetups</title>
+<meta name="description" content="DEVK Meetups in Köln – zwei Ansätze, ein Abend, ein Vergleich. Alle Vorträge, Präsentationen und Rückblicke seit 2019.">
+<style>
+    @font-face { font-family: "Ahkio"; src: url("ki-klein-vs-gross/fonts/ahkio-regular.woff2") format("woff2"); }
+    @font-face { font-family: "Univers Next"; src: url("ki-klein-vs-gross/fonts/univers-next-pro-regular.woff") format("woff"); font-weight: 400; }
+    @font-face { font-family: "Univers Next"; src: url("ki-klein-vs-gross/fonts/univers-next-pro-bold.woff") format("woff"); font-weight: 700; }
+
+    :root {
+        --gruen: #008746;
+        --dunkelgruen: #005437;
+        --hellgruen: #8bc379;
+        --hellgruen-20: #e8f2e4;
+        --text: #1d1d1b;
+        --text-soft: #4a4a48;
+        --linie: #e3e9e4;
+        --font-text: "Univers Next", "Helvetica Neue", Arial, sans-serif;
+        --font-head: "Ahkio", "Univers Next", "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-text); color: var(--text); background: #f4f6f4; line-height: 1.6; font-size: 16px; }
+    a { color: var(--gruen); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+
+    .brandbar { background: #fff; border-bottom: 3px solid var(--gruen); position: sticky; top: 0; z-index: 10; }
+    .brandbar .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; padding-bottom: 14px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+    .brand strong { font-family: var(--font-head); font-weight: 400; color: var(--gruen); font-size: 24px; letter-spacing: .5px; }
+    nav a { text-decoration: none; color: var(--text-soft); font-size: 14px; margin-left: 22px; }
+    nav a:hover { color: var(--gruen); }
+
+    .hero { background: linear-gradient(135deg, var(--dunkelgruen) 0%, var(--gruen) 100%); color: #fff; }
+    .hero .wrap { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; padding-top: 64px; padding-bottom: 64px; }
+    .hero .tag { display: inline-block; background: rgba(255,255,255,.15); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 6px 12px; border-radius: 4px; margin-bottom: 18px; }
+    .hero h1 { font-family: var(--font-head); font-weight: 400; font-size: 52px; line-height: 1.08; margin-bottom: 18px; }
+    .hero p { font-size: 18px; opacity: .92; margin-bottom: 26px; }
+    .hero img { width: 100%; border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,.25); display: block; }
+    .btn { display: inline-block; background: #fff; color: var(--dunkelgruen); font-weight: 700; text-decoration: none; padding: 12px 22px; border-radius: 999px; margin-right: 10px; transition: transform .15s; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn.ghost { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.6); }
+
+    section { padding: 64px 0; }
+    h2 { font-family: var(--font-head); font-weight: 400; color: var(--dunkelgruen); font-size: 36px; line-height: 1.15; margin-bottom: 10px; }
+    h2 small { display: block; font-family: var(--font-text); font-size: 13px; color: var(--gruen); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+    .intro-text { max-width: 720px; color: var(--text-soft); font-size: 17px; margin-bottom: 30px; }
+
+    .featured { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,84,55,.08); }
+    .featured img { width: 100%; height: auto; display: block; }
+    .featured .body { padding: 36px; display: grid; grid-template-columns: 1.3fr 1fr; gap: 10px 40px; align-items: start; }
+    .featured .body .side { padding-top: 6px; }
+    .featured h3 { font-family: var(--font-head); font-weight: 400; color: var(--dunkelgruen); font-size: 32px; line-height: 1.15; margin: 6px 0 12px; }
+    .date { font-size: 13px; font-weight: 700; color: var(--gruen); letter-spacing: 1px; text-transform: uppercase; }
+    .facts { display: flex; gap: 12px; margin: 20px 0 24px; flex-wrap: wrap; }
+    .fact { background: var(--hellgruen-20); border-radius: 10px; padding: 10px 14px; text-align: center; flex: 1; min-width: 90px; }
+    .fact b { display: block; font-family: var(--font-head); font-weight: 400; font-size: 24px; color: var(--gruen); line-height: 1.1; }
+    .fact span { font-size: 12px; color: var(--text-soft); }
+    .links a { display: inline-block; margin: 0 14px 8px 0; font-weight: 700; text-decoration: none; }
+    .links a::after { content: " →"; }
+    .featured .btn { background: var(--gruen); color: #fff; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 28px; }
+    .card { background: #fff; border-radius: 14px; padding: 26px; border-top: 5px solid var(--hellgruen); box-shadow: 0 6px 20px rgba(0,84,55,.06); display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0,84,55,.12); }
+    .card h3 { font-family: var(--font-head); font-weight: 400; color: var(--dunkelgruen); font-size: 23px; line-height: 1.2; margin: 6px 0 10px; }
+    .card p { color: var(--text-soft); font-size: 14.5px; flex: 1; margin-bottom: 16px; }
+    .vs { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 12px; }
+    .vs i { font-style: normal; background: var(--gruen); color: #fff; border-radius: 50%; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; }
+
+    .history { background: #fff; }
+    .history img { width: 100%; border-radius: 14px; border: 1px solid var(--linie); display: block; margin-top: 24px; }
+
+    .ideas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .ideas span { background: #fff; border: 2px solid var(--hellgruen); color: var(--dunkelgruen); border-radius: 999px; padding: 8px 16px; font-size: 14px; }
+
+    footer { background: var(--dunkelgruen); color: #fff; font-size: 13px; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 26px; padding-bottom: 26px; }
+    footer b { font-family: var(--font-head); font-weight: 400; font-size: 18px; }
+    footer a { color: #fff; }
+
+    @media (max-width: 860px) {
+        .hero .wrap, .featured .body { grid-template-columns: 1fr; }
+        .cards { grid-template-columns: 1fr; }
+        .hero h1 { font-size: 38px; }
+        nav { display: none; }
+        .wrap { padding: 0 20px; }
+    }
+</style>
+</head>
+<body>
+
+<header class="brandbar">
+    <div class="wrap">
+        <a class="brand" href="./"><img src="developers-koeln-meetup.jpg" alt="{DEV}elopers {K}öln Logo"><strong>{DEV}elopers {K}öln</strong></a>
+        <nav>
+            <a href="#aktuell">Aktuell</a>
+            <a href="#archiv">Archiv</a>
+            <a href="#historie">Historie</a>
+            <a href="https://github.com/devk-insurance/devk-meetups">GitHub</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="wrap">
+        <div>
+            <div class="tag">DEVK Meetups · Köln</div>
+            <h1>Zwei Ansätze. Ein Abend. Ein ehrlicher Vergleich.</h1>
+            <p>Wir bei der DEVK arbeiten aktiv mit neuen Technologien und Methoden. Bei unseren Meetups stellen wir zwei Alternativen gegenüber – mit Speaker:innen aus der Community, offenen Diskussionen und Networking.</p>
+            <a class="btn" href="#aktuell">Zum aktuellen Meetup</a>
+            <a class="btn ghost" href="#archiv">Alle Meetups</a>
+        </div>
+        <img src="ki-klein-vs-gross/fotos/gruppenfoto.jpg" alt="Organisationsteam und Speakerinnen beim DEVK Meetup 2026">
+    </div>
+</div>
+
+<section id="aktuell">
+    <div class="wrap">
+        <h2><small>Aktuelles Meetup</small>KI: Klein gegen Groß</h2>
+        <p class="intro-text">Große Sprachmodelle gegen spezialisierte KI – wer gewinnt das Duell?</p>
+
+        <article class="featured">
+            <img src="ki-klein-vs-gross/fotos/keyvisual.jpg" alt="Keyvisual KI – Klein gegen Groß">
+            <div class="body">
+                <div>
+                <div class="date">17. September 2026 · DEVK / HDI Cafeteria</div>
+                <h3>David gegen Goliath: Wer gewinnt das KI-Duell?</h3>
+                <div class="vs">Jennifer Lucifero <i>VS</i> Gloria Barth</div>
+                <p>Jennifer Lucifero (codecentric AG) über GenAI &amp; große LLMs, Gloria Barth (DOS Software-Systeme GmbH) über spezialisierte KI-Modelle in der MRT-Diagnostik. Das Fazit: Passung statt Entweder-oder.</p>
+                </div>
+                <div class="side">
+                <div class="facts">
+                    <div class="fact"><b>57</b><span>Gäste</span></div>
+                    <div class="fact"><b>2</b><span>Vorträge</span></div>
+                    <div class="fact"><b>31,3 Mio.</b><span>vs. ~1,8 Bio. Parameter</span></div>
+                </div>
+                <a class="btn" href="ki-klein-vs-gross/">Rückblick lesen</a>
+                <div class="links" style="margin-top:18px">
+                    <a href="ki-klein-vs-gross/2026-09-17-devk-meetup-ki-gross-llms.pdf">Folien „Groß“</a>
+                    <a href="ki-klein-vs-gross/2026-09-17-devk-meetup-ki-klein-spezialisierte-modelle.pdf">Folien „Klein“</a>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7500164088879030273">LinkedIn</a>
+                </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section id="archiv" style="padding-top:0">
+    <div class="wrap">
+        <h2><small>Archiv</small>Alle Meetups</h2>
+        <div class="cards">
+            <article class="card">
+                <div class="date">3. Juli 2025</div>
+                <h3>Künstliche Intelligenz – Fluch oder Segen?</h3>
+                <div class="vs">Segen <i>VS</i> Fluch</div>
+                <p>Karolina Weber (Hyand) über KI im Geschäftsalltag, Sandra Parsick über (Gen)AI im Dev-Alltag – ein Erfahrungsbericht.</p>
+                <div class="links">
+                    <a href="https://github.com/devk-insurance/devk-meetups/tree/master/ki-fluch-vs-segen">Details</a>
+                    <a href="ki-fluch-vs-segen/2025-07-03-devk-meetup-ki-revolution.pdf">Folien Segen</a>
+                    <a href="ki-fluch-vs-segen/2025-07-03-devk-meetup-ki-erfahrungsbericht.pdf">Folien Fluch</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="date">20. November 2019</div>
+                <h3>Bright Side vs. Dark Side of Microservices</h3>
+                <div class="vs">Bright <i>VS</i> Dark</div>
+                <p>Fünf Jahre Microservices im Lebensmittel-eCommerce als Erfolgsgeschichte – und was man bei Microservices auch bedenken sollte.</p>
+                <div class="links">
+                    <a href="https://github.com/devk-insurance/devk-meetups/tree/master/microservices-bright-vs-dark">Details</a>
+                    <a href="microservices-bright-vs-dark/2019-11-20-devk-meetup-microsevices-brightside.pdf">Folien Bright</a>
+                    <a href="microservices-bright-vs-dark/2019-11-20-devk-meetup-microsevices-darkside.pdf">Folien Dark</a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="date">3. Juli 2019</div>
+                <h3>Showdown GWT vs. VueJS</h3>
+                <div class="vs">GWT <i>VS</i> VueJS</div>
+                <p>Java im Browser als solide Basis der Enterprise-Entwicklung gegen „Pimp My Java Web Application mit VueJS“.</p>
+                <div class="links">
+                    <a href="https://github.com/devk-insurance/devk-meetups/tree/master/gwt-vs-vuejs">Details</a>
+                    <a href="gwt-vs-vuejs/2019-07-03-devk-meetup-gwt.pdf">Folien GWT</a>
+                    <a href="gwt-vs-vuejs/2019-07-03-devk-meetup-vuejs.pdf">Folien VueJS</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="historie" class="history">
+    <div class="wrap">
+        <h2><small>Seit 2019</small>Die Meetup-Reihe</h2>
+        <p class="intro-text">Von GWT vs. VueJS über Microservices bis zur KI – jedes Meetup stellt zwei Alternativen gegenüber, die wir vergleichen. Themen, die uns außerdem interessieren:</p>
+        <div class="ideas">
+            <span>Spring Boot vs. Quarkus vs. Micronaut</span>
+            <span>Orchestration vs. Choreography</span>
+            <span>Rancher vs. OpenShift</span>
+            <span>Scrum vs. V-Model</span>
+            <span>Native vs. Non-Native</span>
+            <span>Java vs. Kotlin</span>
+            <span>Polyglott vs. Monoglott</span>
+        </div>
+        <img src="ki-klein-vs-gross/fotos/meetups-historie.jpg" alt="{DEV}elopers {K}öln: Meetups seit 2019">
+    </div>
+</section>
+
+<footer>
+    <div class="wrap">
+        <div><b>{DEV}elopers {K}öln</b><br>DEVK Meetups · Köln</div>
+        <div>Jörg &amp; Lofi · <a href="https://www.devk.de">devk.de</a> · <a href="https://github.com/devk-insurance/devk-meetups">GitHub</a><br>Gesagt. Getan. Geholfen.</div>
+    </div>
+</footer>
+
+</body>
+</html>
