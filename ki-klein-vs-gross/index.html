@@ -24,6 +24,10 @@
     body { font-family: var(--font-text); color: var(--text); background: #f4f6f4; line-height: 1.6; font-size: 16px; }
     .page { max-width: 900px; margin: 0 auto; background: #fff; }
 
+    .topnav { padding: 10px 44px 0; font-size: 13px; }
+    .topnav a { color: var(--gruen); font-weight: 700; text-decoration: none; }
+    .topnav a:hover { text-decoration: underline; }
+
     .brandbar { display: flex; justify-content: space-between; align-items: center; padding: 18px 44px; border-bottom: 3px solid var(--gruen); font-size: 13px; color: var(--text-soft); }
     .brandbar strong { font-family: var(--font-head); font-weight: 400; color: var(--gruen); font-size: 24px; letter-spacing: .5px; }
 
@@ -90,11 +94,12 @@
         .hero img { height: 330px; }
         h2 { break-after: avoid; }
         .pb { break-before: page; }
+        .topnav { display: none; }
         * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
     @media (max-width: 680px) {
         .two, .facts, .gallery { grid-template-columns: 1fr 1fr; }
-        header.intro, main, .brandbar, footer { padding-left: 20px; padding-right: 20px; }
+        header.intro, main, .brandbar, .topnav, footer { padding-left: 20px; padding-right: 20px; }
         h1 { font-size: 30px; }
         .two, .gallery { grid-template-columns: 1fr; }
         .two.photo img { height: auto; }
@@ -116,6 +121,8 @@
 </head>
 <body>
 <div class="page">
+
+<nav class="topnav"><a href="../index.html">← Zur Hauptseite</a></nav>
 
 <div class="brandbar"><strong>IT News</strong><span>Community · {DEV}elopers {K}öln · Ausgabe Oktober 2026</span></div>
 
