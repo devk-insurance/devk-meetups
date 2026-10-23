@@ -70,6 +70,12 @@
     .box { border: 2px solid var(--hellgruen); border-radius: 12px; padding: 18px 22px; margin: 26px 0; break-inside: avoid; }
     .box h3 { color: var(--dunkelgruen); font-size: 17px; margin-bottom: 8px; }
 
+    .pdf-link { display: inline-block; font-size: 14px; font-weight: 700; color: var(--gruen); text-decoration: none; border: 2px solid var(--hellgruen); border-radius: 6px; padding: 5px 12px; margin: 0 0 14px; }
+    .pdf-link:hover { background: var(--hellgruen-20); }
+    .pdf-link::before { content: "↗ "; }
+    .downloads { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .downloads .pdf-link { margin: 0; }
+
     .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
     .gallery figure { margin: 0; }
     .gallery figcaption { font-size: 11.5px; }
@@ -143,6 +149,7 @@
 </figure>
 
 <h2><small>Vortrag 1 · „Goliath“</small>GenAI &amp; große LLMs – Jennifer Lucifero, codecentric</h2>
+<a class="pdf-link" href="2026-09-17-devk-meetup-ki-gross-llms.pdf" target="_blank" rel="noopener">Folien als PDF ansehen</a>
 
 <p>Jennifer Lucifero holte das Publikum zuerst ab: Wer hat schon von LLMs gehört? Wer nutzt sie beruflich? Wer hat schon einmal ein Modell lokal laufen lassen? Danach ging es unter die Haube – von Tokenization über Embeddings und Self-Attention bis zum Softmax, der bewusst nicht immer das wahrscheinlichste Token auswählt, damit Antworten „menschlicher“ wirken. Ihre Kernbotschaft:</p>
 
@@ -180,6 +187,7 @@
 </div>
 
 <h2 class="pb"><small>Vortrag 2 · „David“</small>Spezialisierte KI-Modelle in der Praxis – Gloria Barth, DOS</h2>
+<a class="pdf-link" href="2026-09-17-devk-meetup-ki-klein-spezialisierte-modelle.pdf" target="_blank" rel="noopener">Folien als PDF ansehen</a>
 
 <div class="two photo">
     <figure><img src="fotos/gloria-vortrag.jpg" alt="Gloria Barth beim Vortrag"><figcaption>Gloria Barth: „Ist dieser Hund gesund?“</figcaption></figure>
@@ -251,6 +259,10 @@
     <figure><img src="folien/gloria-36.jpg" alt=""><figcaption>Die Bilanz des Spezialwegs</figcaption></figure>
     <figure><img src="folien/gloria-39.jpg" alt=""><figcaption>Fazit: Passung statt Entweder-oder</figcaption></figure>
     <figure><img src="fotos/meetups-historie.jpg" alt=""><figcaption>{DEV}elopers {K}öln: Meetups seit 2019</figcaption></figure>
+</div>
+<div class="downloads">
+    <a class="pdf-link" href="2026-09-17-devk-meetup-ki-gross-llms.pdf" target="_blank" rel="noopener">Jennifer Lucifero – GenAI &amp; große LLMs (PDF)</a>
+    <a class="pdf-link" href="2026-09-17-devk-meetup-ki-klein-spezialisierte-modelle.pdf" target="_blank" rel="noopener">Gloria Barth – Spezialisierte KI-Modelle (PDF)</a>
 </div>
 
 </main>
