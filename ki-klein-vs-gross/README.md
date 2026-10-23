@@ -40,6 +40,8 @@ Große Sprachmodelle wie GPT und Claude sind in aller Munde – aber was steckt 
 
 > „Ein LLM weiß nichts – es schätzt nur verdammt gut.“ – Jennifer Lucifero, „Die Illusion der Intelligenz“
 
+<img src="fotos/jennifer-vortrag.jpg" width="400"><br><em>Jennifer Lucifero mit der DevOps-Schleife.</em>
+
 <table>
 <tr>
 <td><img src="folien/jennifer-09.jpg" width="400"><br><em>Die Illusion der Intelligenz</em></td>
@@ -88,7 +90,6 @@ Presentation: [2026-09-17-devk-meetup-ki-gross-llms.pdf](https://github.com/devk
 <table>
 <tr>
 <td><img src="fotos/gloria-vortrag.jpg" width="400"><br><em>Gloria Barth: „Ist dieser Hund gesund?“</em></td>
-<td><img src="fotos/jennifer-vortrag.jpg" width="400"><br><em>Jennifer Lucifero mit der DevOps-Schleife.</em></td>
 </tr>
 </table>
 
